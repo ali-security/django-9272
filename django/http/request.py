@@ -11,7 +11,9 @@ from django.core.exceptions import (
     DisallowedHost, ImproperlyConfigured, RequestDataTooBig,
 )
 from django.core.files import uploadhandler
-from django.http.multipartparser import MultiPartParser, MultiPartParserError
+from django.http.multipartparser import (
+    MultiPartParser, MultiPartParserError, TooManyFilesSent,
+)
 from django.utils.datastructures import (
     CaseInsensitiveMapping, ImmutableList, MultiValueDict,
 )
